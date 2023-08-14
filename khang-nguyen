@@ -1,0 +1,34 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("DrRay", "Default")
+
+local tab = DrRayLibrary.newTab("T-Trang1", "ImageIdHere")
+
+tab.newButton("F-Fly", "Bay Lên!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+tab.newButton( "Arceus", "Prints Hello!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+end)
+
+tab.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState)
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+tab.newInput("Input", "Prints your input.", function(text)
+    print("Entered text: " .. text)
+end)
+
+tab.newKeybind("Input Key", "Press the key to start; it will be printed out.", function(key)
+    print(key)
+end)
+
+local tab = DrRayLibrary.newTab("Script-🇻🇳", "ImageIdHere")
+
+tab.newButton("Button", "Mai Update!", function()
+    print('Hello!')
+end)
